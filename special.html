@@ -1,0 +1,17 @@
+<script>
+    var sum=0,pro=1
+    var n=parseInt(prompt("Enter any number"))
+    var a=n
+    while(n>0){
+        var rem=n%10
+        sum=sum+rem
+        pro=pro*rem
+        n=parseInt(n/10)
+    }
+    if((sum+pro)==a){
+        document.write("special digit no.")
+    }
+    else{
+        document.write("not special digit no.")
+    }
+</script>

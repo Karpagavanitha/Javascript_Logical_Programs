@@ -1,0 +1,27 @@
+<script>
+    let size=parseInt(prompt("Enter the size of the array"))
+    let a=[]
+    for(let i=0;i<size;i++){
+        a[i]=parseInt(prompt("Enter the number"))
+    }
+    for(let i=0;i<a.length;i++){
+        let n=a[i]
+       let sum=0;var arm=n
+    while(n>0){
+        let rem=n%10
+        sum=sum+(rem*rem*rem)
+        n=parseInt(n/10)
+
+
+
+    }
+    if(sum==arm){
+        document.write("armstrong number <br>")
+    }
+    else{
+        document.write("not armstrong number <br>")
+    }
+}
+   
+
+</script>

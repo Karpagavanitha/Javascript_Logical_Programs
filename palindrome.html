@@ -1,0 +1,23 @@
+<script>
+    let size=parseInt(prompt("enter the size of the array"))
+    let a=[]
+    for(let i=0;i<size;i++){
+        a[i]=parseInt(prompt("enter the number"))
+    }
+    for(let i=0;i<a.length;i++){
+         let n=a[i]
+         let rev=0
+         let temp=n
+    while(n>0){
+        let rem=n%10
+        rev=(rev*10)+rem
+        n=parseInt(n/10)
+    }
+    if(temp==rev){
+        document.write("palindrome <br>")
+    }
+    else{
+        document.write("not palindrome <br>")
+    }
+}
+</script>

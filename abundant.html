@@ -1,0 +1,25 @@
+<script>
+
+    let size=parseInt(prompt("Enter the size of the array"))
+    let arr=[]
+    for(let i=0;i<size;i++){
+        arr[i]=parseInt(prompt("Enter the number"))
+    }
+    
+    for(let i=0;i<arr.length;i++){
+        let n=arr[i]
+        let sum=0
+        for(let j=1;j<n;j++){
+         if(n%j==0){
+            sum=sum+j
+        }
+    }
+    if(sum>n){
+        document.write("abundant number <br>")
+    }
+    else{
+        document.write("not abundant number <br>")
+    }
+    }
+    
+</script>

@@ -1,0 +1,25 @@
+<script>
+    let size=parseInt(prompt("enter the size of the  number"))
+    let a=[]
+    for(let i=0;i<size;i++){
+        a[i]=parseInt(prompt("enter the numbers"))
+    }
+    for(let i=0;i<a.length;i++){
+        let n=a[i]
+        let j=1,sum=0
+        
+        while(j<n){
+          if(n%j==0){
+            sum=sum+j
+
+          }
+          j++
+     }
+    if(sum==n){
+        document.write("perfect number <br>")
+    }
+    else{
+        document.write("not perfect number <br>")
+    }
+}
+</script>

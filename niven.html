@@ -1,0 +1,17 @@
+<script>
+    var n=parseInt(prompt("Enter any number"))
+    var sum=0
+    var a=n
+    while(n>0){
+        var rem=n%10
+        sum=sum+rem
+        n=parseInt(n/10)
+
+    }
+    if(n%sum==0){
+        document.write("niven no.")
+    }
+    else{
+        document.write("not niven no.")
+    }
+</script>

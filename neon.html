@@ -1,0 +1,25 @@
+<script>
+    let size=parseInt(prompt("enter the size of the array"))
+    let a=[]
+    for(let i=0;i<size;i++){
+        a[i]=parseInt(prompt("enter the number"))
+    }
+    for(let i=0;i<a.length;i++){
+        let n=a[i]
+        let sq=n*n
+        let sum=0
+        while(sq>0){
+           
+           let rem=sq%10
+           sum=sum+rem
+           sq=parseInt(sq/10)
+
+    }
+   if(sum==n){
+        document.write("neon number <br>")
+    }
+    else{
+        document.write("not neon number <br>")
+    }
+}
+</script>
