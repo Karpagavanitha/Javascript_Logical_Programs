@@ -1,0 +1,19 @@
+<script>
+    let n=parseInt(prompt("enter the number"))
+    let rev=0
+    let pal=n
+    function pali(){
+        while(n>0){
+            let rem=n%10
+            rev=(rev*10)+rem
+            n=parseInt(n/10)
+        }
+        if(pal==rev){
+            document.write("palindrome")
+        }
+        else{
+            document.write("not palindrome")
+        }
+    }
+    pali()
+</script>

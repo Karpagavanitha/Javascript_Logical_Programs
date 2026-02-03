@@ -1,0 +1,15 @@
+<script>
+    let n=parseInt(prompt("enter the number you want to reverse"))
+    
+    for(let i=1;i<=n;i++){
+        let num=i
+        let rev=0
+       while(num>0){
+            let rem=num%10
+            rev=(rev*10)+rem
+            num=parseInt(num/10)
+            //document.write(rev+"<br>")
+        }
+       document.write(rev+"<br>")
+    }
+</script>

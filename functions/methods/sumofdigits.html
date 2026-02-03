@@ -1,0 +1,18 @@
+<script>
+    class sumofdigits{
+     sum(){
+          let sum=0
+          let n=parseInt(prompt("Enter the number of digits"))
+        while(n>0){
+          let rem=n%10
+          sum=sum+rem
+          n=parseInt(n/10)
+    }
+    document.write(sum)
+}
+
+}
+let obj=new sumofdigits()
+obj.sum()
+
+</script>

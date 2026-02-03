@@ -1,0 +1,36 @@
+<script>
+    class calculate{
+        constructor(a,b){
+            this.a=a
+            this.b=b
+        }
+        add(){
+            let c=this.a+this.b
+            return c
+        }
+        sub(){
+            let c=this.a-this.b
+            return c
+        }
+        mul(){
+            let c=this.a*this.b
+            return c
+        }
+        div(){
+            let c=this.a/this.b
+            return c
+        }
+    }
+    let a=parseInt(prompt("enter the number a"))
+    let b=parseInt(prompt("enter the number b"))
+    let obj=new calculate(a,b)
+    let x=obj.add()
+    document.write("Add"+x+"<br>")
+    let y=obj.sub()
+    document.write("sub"+y+"<br>")
+    let z=obj.mul()
+    document.write("mul"+z+"<br>")
+    let w=obj.div()
+    document.write("div"+w+"<br>")
+
+</script>

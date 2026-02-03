@@ -1,0 +1,15 @@
+<script>
+    let a=[]
+    let size=parseInt(prompt("enter the size of the array"))
+    for(let i=0;i<size;i++){
+        a[i]=parseInt(prompt("enter the number"))
+    }
+    let squ=a.map(i=>Math.pow(i,2))
+    document.write("Square of the array"+squ+"<br>")
+    let less=squ.filter(i=>i<50)
+    document.write(less+"<br>")
+    let sum=less.reduce((sum,i)=>sum+i,0)
+    document.write("sum of the array"+sum+"<br>")
+
+
+</script>

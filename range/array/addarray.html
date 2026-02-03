@@ -1,0 +1,11 @@
+<script>
+    let size=parseInt(prompt("enterr the size of the array"))
+    let a=[]
+    for(let i=0;i<size;i++){
+        a[i]=parseInt(prompt("enter the number"))
+    }
+    let result=a.reduce((sum,i)=>sum+i,0)
+    let length=a.length
+    let avg=(result/length)
+    document.write(avg)
+</script>

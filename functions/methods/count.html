@@ -1,0 +1,18 @@
+<script>
+    let n=parseInt(prompt("enter the number"))
+    let count=0
+    class digit{
+        
+        count(){
+            
+            while(n>0){
+                count++
+                n=parseInt(n/10)
+            }
+            document.write(count)
+
+        }
+    }
+    let obj=new digit()
+    obj.count()
+</script>

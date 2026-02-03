@@ -1,0 +1,18 @@
+<script>
+    let n=parseInt(prompt("enter the number"))
+    class fibonacci{
+        fib(){
+            let f=0
+            let s=1
+            let t
+            for(let i=1;i<=n;i++){
+                document.write(f+"<br>")
+                t=f+s
+                f=s
+                s=t
+            }
+        }
+    }
+    let obj=new fibonacci()
+    obj.fib()
+</script>
